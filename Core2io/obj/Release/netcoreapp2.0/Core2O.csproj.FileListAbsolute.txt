@@ -1,0 +1,11 @@
+c:\users\ukallihuch001\Source\Repos\Core2O\Core2O\bin\Release\netcoreapp2.0\Core2O.deps.json
+c:\users\ukallihuch001\Source\Repos\Core2O\Core2O\bin\Release\netcoreapp2.0\Core2O.runtimeconfig.json
+c:\users\ukallihuch001\Source\Repos\Core2O\Core2O\bin\Release\netcoreapp2.0\Core2O.runtimeconfig.dev.json
+c:\users\ukallihuch001\Source\Repos\Core2O\Core2O\bin\Release\netcoreapp2.0\Core2O.dll
+c:\users\ukallihuch001\Source\Repos\Core2O\Core2O\bin\Release\netcoreapp2.0\Core2O.pdb
+c:\users\ukallihuch001\Source\Repos\Core2O\Core2O\obj\Release\netcoreapp2.0\Core2O.csprojAssemblyReference.cache
+c:\users\ukallihuch001\Source\Repos\Core2O\Core2O\obj\Release\netcoreapp2.0\Core2O.csproj.CoreCompileInputs.cache
+c:\users\ukallihuch001\Source\Repos\Core2O\Core2O\obj\Release\netcoreapp2.0\Core2O.AssemblyInfoInputs.cache
+c:\users\ukallihuch001\Source\Repos\Core2O\Core2O\obj\Release\netcoreapp2.0\Core2O.AssemblyInfo.cs
+c:\users\ukallihuch001\Source\Repos\Core2O\Core2O\obj\Release\netcoreapp2.0\Core2O.dll
+c:\users\ukallihuch001\Source\Repos\Core2O\Core2O\obj\Release\netcoreapp2.0\Core2O.pdb

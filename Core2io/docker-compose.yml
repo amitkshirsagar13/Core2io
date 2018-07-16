@@ -1,0 +1,19 @@
+version: '3.3'
+services:
+  backend-service:
+    image: core2io-service
+    container_name: core2io-service
+    ports:
+     - "8001:80"
+     - "2424:443"
+    volumes:
+     - \opt\core2io\publish:\core2io
+    environment:
+     - ENV=DEV
+    networks:
+      ehub:
+        aliases:
+          - "core2io-service"
+networks:
+  ehub:
+    driver: bridge

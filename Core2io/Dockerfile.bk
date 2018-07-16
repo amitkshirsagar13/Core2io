@@ -1,0 +1,25 @@
+FROM microsoft/iis:10.0.14393.206
+SHELL ["powershell"]
+
+RUN Install-WindowsFeature NET-Framework-45-ASPNET ; \
+    Install-WindowsFeature Web-Asp-Net45
+
+EXPOSE 80
+EXPOSE 443
+
+RUN mkdir Core2io
+RUN New-IISSite -Name 'Core2io' \
+    -PhysicalPath 'c:\Core2io' -BindingInformation "*:80:"
+
+RUN powershell.exe -Command " \
+    Import-Module IISAdministration; \
+    $cert = New-SelfSignedCertificate -DnsName api-Core2io-dev.k8cluster.com -CertStoreLocation cert:\LocalMachine\My; \
+    $certHash = $cert.GetCertHash(); \
+    $sm = Get-IISServerManager; \
+    $sm.Sites[\"Core2io\"].Bindings.Add(\"*:443:\", $certHash, \"My\", \"0\"); \
+    $sm.CommitChanges();"
+
+# The final instruction copies the site you published earlier into the container.
+COPY ./bin/Debug/ /Core2io
+
+#docker run -it --name Core2io-service --rm -p 8000:80 -p 2424:443 Core2io-service

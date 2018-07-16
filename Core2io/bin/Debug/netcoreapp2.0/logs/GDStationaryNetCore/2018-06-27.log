@@ -1,0 +1,30 @@
+[2018-06-27 15:19:15.7880][UKALLIHUCH00144][Info] Request starting HTTP/1.1 DEBUG http://localhost:14053/  0 
+[2018-06-27 15:19:15.7880][UKALLIHUCH00144][Info] Request starting HTTP/1.1 GET http://localhost:14053/api/values   
+[2018-06-27 15:19:15.9153][UKALLIHUCH00144][Info] Request finished in 191.7432ms 200  
+[2018-06-27 15:19:16.3166][UKALLIHUCH00144][Info] Executing action method Core2O.Controllers.ValuesController.Get (Core2O) with arguments ((null)) - ModelState is Valid 
+[2018-06-27 15:20:05.0416][UKALLIHUCH00144][Info] Request starting HTTP/1.1 DEBUG http://localhost:14053/  0 
+[2018-06-27 15:20:05.0416][UKALLIHUCH00144][Info] Request starting HTTP/1.1 GET http://localhost:14053/api/values   
+[2018-06-27 15:20:05.1612][UKALLIHUCH00144][Info] Request finished in 180.3016ms 200  
+[2018-06-27 15:20:05.4034][UKALLIHUCH00144][Info] Executed action Core2O.Controllers.ValuesController.Get (Core2O) in 6.3248ms 
+[2018-06-27 15:20:05.4836][UKALLIHUCH00144][Error] An unhandled exception has occurred while executing the request Unable to resolve service for type 'NLog.ILogger' while attempting to activate 'Core2O.Controllers.ValuesController'.
+[2018-06-27 15:20:05.8123][UKALLIHUCH00144][Info] Request finished in 791.0704ms 500 text/html; charset=utf-8 
+[2018-06-27 15:20:05.9369][UKALLIHUCH00144][Info] Request starting HTTP/1.1 GET http://localhost:14053/favicon.ico   
+[2018-06-27 15:20:05.9544][UKALLIHUCH00144][Info] Request finished in 8.5234ms 404  
+[2018-06-27 15:47:52.3087][UKALLIHUCH00144][Info] Request starting HTTP/1.1 GET http://localhost:14053/api/values   
+[2018-06-27 15:47:52.3087][UKALLIHUCH00144][Info] Request starting HTTP/1.1 DEBUG http://localhost:14053/  0 
+[2018-06-27 15:47:52.4451][UKALLIHUCH00144][Info] Request finished in 204.8871ms 200  
+[2018-06-27 15:47:52.8422][UKALLIHUCH00144][Info] Executing action method Core2O.Controllers.ValuesController.Get (Core2O) with arguments ((null)) - ModelState is Valid 
+[2018-06-27 15:47:55.2760][UKALLIHUCH00144][Debug] We're going to throw an exception now. 
+[2018-06-27 15:47:56.7280][UKALLIHUCH00144][Warn] It's gonna happen!! 
+[2018-06-27 15:47:58.3285][UKALLIHUCH00144][Info] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+[2018-06-27 15:47:58.4757][UKALLIHUCH00144][Info] Executed action Core2O.Controllers.ValuesController.Get (Core2O) in 5710.437ms 
+[2018-06-27 15:47:58.4832][UKALLIHUCH00144][Info] Request finished in 6242.914ms 200 application/json; charset=utf-8 
+[2018-06-27 15:51:29.6539][UKALLIHUCH00144][Info] Request starting HTTP/1.1 DEBUG http://localhost:14053/  0 
+[2018-06-27 15:51:29.6539][UKALLIHUCH00144][Info] Request starting HTTP/1.1 GET http://localhost:14053/api/values   
+[2018-06-27 15:51:29.7948][UKALLIHUCH00144][Info] Request finished in 228.8953ms 200  
+[2018-06-27 15:51:30.1627][UKALLIHUCH00144][Info] Executing action method Core2O.Controllers.ValuesController.Get (Core2O) with arguments ((null)) - ModelState is Valid 
+[2018-06-27 15:51:33.0394][UKALLIHUCH00144][Debug] We're going to throw an exception now. 
+[2018-06-27 15:51:33.0490][UKALLIHUCH00144][Warn] It's gonna happen!! 
+[2018-06-27 15:51:33.1016][UKALLIHUCH00144][Info] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+[2018-06-27 15:51:33.2185][UKALLIHUCH00144][Info] Executed action Core2O.Controllers.ValuesController.Get (Core2O) in 3140.2416ms 
+[2018-06-27 15:51:33.2519][UKALLIHUCH00144][Info] Request finished in 3671.0677ms 200 application/json; charset=utf-8 
