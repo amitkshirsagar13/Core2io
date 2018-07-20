@@ -71,7 +71,7 @@ namespace Core2io
         }
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-            .UseKestrel(SetHost)
+            //.UseKestrel(SetHost)
             .UseStartup<Startup>()
             .Build();
     }
