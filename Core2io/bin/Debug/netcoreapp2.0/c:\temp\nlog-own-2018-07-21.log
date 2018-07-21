@@ -1,0 +1,32 @@
+2018-07-21 22:18:26.8678||FATAL|Microsoft.AspNetCore.Server.Kestrel|Unable to start Kestrel. Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -13 EACCES permission denied
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.Bind(IPEndPoint endPoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.StartAsync(String pipeName, Byte[] pipeMessage, IEndPointInformation endPointInformation, LibuvThread thread)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, List`1 listenOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)|url: |action: 
+2018-07-21 22:18:32.1292||FATAL|Microsoft.AspNetCore.Server.Kestrel|Unable to start Kestrel. Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -13 EACCES permission denied
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.Bind(IPEndPoint endPoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.StartAsync(String pipeName, Byte[] pipeMessage, IEndPointInformation endPointInformation, LibuvThread thread)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, List`1 listenOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)|url: |action: 

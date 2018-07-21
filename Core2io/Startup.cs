@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using NLog.Extensions.Logging;
 using NLog.Web;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Core2io
 {
@@ -25,7 +26,33 @@ namespace Core2io
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddDbContext<TodoContext>(opt =>
+            opt.UseInMemoryDatabase("TodoList"));
+            services.AddMvc()
+            .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            // Register the Swagger generator, defining 1 or more Swagger documents
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info
+                {
+                    Version = "v1",
+                    Title = "Core2io API",
+                    Description = "A simple Core2io .NET Core Web API",
+                    TermsOfService = "None",
+                    Contact = new Contact
+                    {
+                        Name = "Amit Kshirsagar",
+                        Email = "amit.kshirsagar.13@gmail.com",
+                        Url = "https://github.com/amitkshirsagar13"
+                    },
+                    License = new License
+                    {
+                        Name = "Use under GNU",
+                        Url = "https://github.com/amitkshirsagar13"
+                    }
+                });
+            });
         }
 
         
@@ -41,6 +68,15 @@ namespace Core2io
             {
                 app.UseDeveloperExceptionPage();
             }
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Core2io API V1");
+            });
 
             app.UseMvc();
         }
