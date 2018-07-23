@@ -1,0 +1,6 @@
+2018-07-23 19:55:07.9287 Info Message Template Auto Format enabled
+2018-07-23 19:55:07.9415 Info Loading assembly: NLog.Web.AspNetCore
+2018-07-23 19:55:07.9998 Info Adding target File Target[allfile]
+2018-07-23 19:55:08.0041 Info Adding target File Target[ownFile-web]
+2018-07-23 19:55:08.0133 Info Configured from an XML element in /home/poomit/git/Core2io/Core2io/nlog.config...
+2018-07-23 19:55:08.0307 Info Found 45 configuration items
