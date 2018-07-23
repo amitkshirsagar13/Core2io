@@ -1,0 +1,14 @@
+/home/poomit/git/Core2io/Core2io/obj/Debug/netcoreapp2.0/Core2io.csprojAssemblyReference.cache
+/home/poomit/git/Core2io/Core2io/obj/Debug/netcoreapp2.0/Core2io.csproj.GenerateResource.cache
+D:\opt\vsts\Core2io\Core2io\bin\Debug\netcoreapp2.0\nlog.config
+D:\opt\vsts\Core2io\Core2io\bin\Debug\netcoreapp2.0\Core2io.deps.json
+D:\opt\vsts\Core2io\Core2io\bin\Debug\netcoreapp2.0\Core2io.runtimeconfig.json
+D:\opt\vsts\Core2io\Core2io\bin\Debug\netcoreapp2.0\Core2io.runtimeconfig.dev.json
+D:\opt\vsts\Core2io\Core2io\bin\Debug\netcoreapp2.0\Core2io.dll
+D:\opt\vsts\Core2io\Core2io\bin\Debug\netcoreapp2.0\Core2io.pdb
+D:\opt\vsts\Core2io\Core2io\obj\Debug\netcoreapp2.0\Core2io.csproj.CoreCompileInputs.cache
+D:\opt\vsts\Core2io\Core2io\obj\Debug\netcoreapp2.0\Core2io.AssemblyInfoInputs.cache
+D:\opt\vsts\Core2io\Core2io\obj\Debug\netcoreapp2.0\Core2io.AssemblyInfo.cs
+D:\opt\vsts\Core2io\Core2io\obj\Debug\netcoreapp2.0\Core2io.dll
+D:\opt\vsts\Core2io\Core2io\obj\Debug\netcoreapp2.0\Core2io.pdb
+D:\opt\vsts\Core2io\Core2io\obj\Debug\netcoreapp2.0\Core2io.csprojResolveAssemblyReference.cache

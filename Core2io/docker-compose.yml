@@ -1,15 +1,23 @@
 version: '3.3'
 services:
-  backend-service:
+  core2io-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: core2io-service
     container_name: core2io-service
     ports:
      - "8001:80"
      - "2424:443"
     volumes:
-     - \opt\core2io\publish:\core2io
+     - .\Core2O\https:\https
     environment:
      - ENV=DEV
+     - ASPNETCORE_URLS=https://+;http://+
+     - ASPNETCORE_HTTP_PORT=8001
+     - ASPNETCORE_HTTPS_PORT=2424
+     - ASPNETCORE_Kestrel__Certificates__Default__Path=\https\core2io.pfx
+     - ASPNETCORE_Kestrel__Certificates__Default__Password="crypticpassword"
     networks:
       ehub:
         aliases:

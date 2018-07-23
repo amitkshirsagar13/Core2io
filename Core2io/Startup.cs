@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using NLog.Extensions.Logging;
 using NLog.Web;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Core2io
 {
@@ -26,6 +27,28 @@ namespace Core2io
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            // Register the Swagger generator, defining 1 or more Swagger documents
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info
+                {
+                    Version = "v1",
+                    Title = "Core2io Service API",
+                    Description = "A Core2io ASP.NET Core Web API",
+                    TermsOfService = "None",
+                    Contact = new Contact
+                    {
+                        Name = "Amit Kshirsagar",
+                        Email = "amit.kshirsagar.13@gmail.com",
+                        Url = "https://github.com/amitkshirsagar13"
+                    },
+                    License = new License
+                    {
+                        Name = "Use under GNU",
+                        Url = "https://github.com/amitkshirsagar13"
+                    }
+                });
+            });
         }
 
         
@@ -41,8 +64,18 @@ namespace Core2io
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            
             app.UseMvc();
+
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Core2io Service API V1");
+            });
         }
     }
 }
