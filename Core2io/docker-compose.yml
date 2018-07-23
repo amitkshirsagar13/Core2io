@@ -10,7 +10,7 @@ services:
      - "8001:80"
      - "2424:443"
     volumes:
-     - ./Core2O/https:/https
+     - ./Core2io/https:/https
     environment:
      - ENV=DEV
      - ASPNETCORE_URLS=https://+;http://+
