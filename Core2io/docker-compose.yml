@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: core2io-service
+    image: amitkshirsagar13/core2io-service:latest
     container_name: core2io-service
     ports:
      - "8001:80"
