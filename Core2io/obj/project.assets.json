@@ -12760,11 +12760,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\opt\\vsts\\Core2io\\Core2io\\Core2io.csproj",
+      "projectUniqueName": "d:\\opt\\vsts\\Core2io\\Core2io\\Core2io.csproj",
       "projectName": "Core2io",
-      "projectPath": "D:\\opt\\vsts\\Core2io\\Core2io\\Core2io.csproj",
+      "projectPath": "d:\\opt\\vsts\\Core2io\\Core2io\\Core2io.csproj",
       "packagesPath": "C:\\Users\\amit_kshirsagar\\.nuget\\packages\\",
-      "outputPath": "D:\\opt\\vsts\\Core2io\\Core2io\\obj\\",
+      "outputPath": "d:\\opt\\vsts\\Core2io\\Core2io\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
