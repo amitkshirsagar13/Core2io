@@ -1,5 +1,6 @@
 /home/poomit/git/Core2io/Core2io/obj/Debug/netcoreapp2.0/Core2io.csprojAssemblyReference.cache
 /home/poomit/git/Core2io/Core2io/obj/Debug/netcoreapp2.0/Core2io.csproj.GenerateResource.cache
+<<<<<<< HEAD
 D:\opt\vsts\Core2io\Core2io\bin\Debug\netcoreapp2.0\nlog.config
 D:\opt\vsts\Core2io\Core2io\bin\Debug\netcoreapp2.0\Core2io.deps.json
 D:\opt\vsts\Core2io\Core2io\bin\Debug\netcoreapp2.0\Core2io.runtimeconfig.json
@@ -12,3 +13,5 @@ D:\opt\vsts\Core2io\Core2io\obj\Debug\netcoreapp2.0\Core2io.AssemblyInfo.cs
 D:\opt\vsts\Core2io\Core2io\obj\Debug\netcoreapp2.0\Core2io.dll
 D:\opt\vsts\Core2io\Core2io\obj\Debug\netcoreapp2.0\Core2io.pdb
 D:\opt\vsts\Core2io\Core2io\obj\Debug\netcoreapp2.0\Core2io.csprojResolveAssemblyReference.cache
+=======
+>>>>>>> 8ff3b3a8b7f76217fee970b0b7f08aee11e7c98d
