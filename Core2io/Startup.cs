@@ -58,8 +58,6 @@ namespace Core2io
             env.ConfigureNLog("nlog.config");
             loggerFactory.AddNLog();
 
-            //add NLog.Web
-            //app.AddNLogWeb();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
