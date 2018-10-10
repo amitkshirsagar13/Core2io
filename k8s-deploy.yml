@@ -16,18 +16,18 @@ data:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: core2o
+  name: core2io
   namespace: ${NAMESPACE}
 data:
-  VCORE2O_VERSION: "v1.2.3"
+  Vcore2io_VERSION: "v1.2.3"
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: core2o
+  name: core2io
   labels:
-    name: core2o
-    app: core2o
+    name: core2io
+    app: core2io
     image: ${DOCKER_IMAGE_NAME}
   namespace: ${NAMESPACE}
 spec:
@@ -35,12 +35,12 @@ spec:
   template:
     metadata:
       labels:
-        app: core2o
+        app: core2io
     spec:
       imagePullSecrets:
         - name: regsecret
       containers:
-      - name: core2o
+      - name: core2io
         image: "${DOCKER_IMAGE_NAME}:${docker_image_version}"
         imagePullPolicy: Always
         ports:
@@ -49,21 +49,21 @@ spec:
           name: api-port
         envFrom:
         - configMapRef:
-            name: core2o
+            name: core2io
 ---
 apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: core2o
-  name: core2o
+    app: core2io
+  name: core2io
   namespace: ${NAMESPACE}
 spec:
   ports:
-  - name: core2o
+  - name: core2io
     port: 80
     targetPort: api-port
     protocol: TCP
   selector:
-    app: core2o
+    app: core2io
 ---
