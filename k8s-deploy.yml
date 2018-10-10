@@ -1,1 +1,69 @@
-
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ${NAMESPACE}
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: regsecret
+  namespace: ${NAMESPACE}
+type: kubernetes.io/dockerconfigjson
+data:
+  .dockerconfigjson: xsds==
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: core2o
+  namespace: ${NAMESPACE}
+data:
+  VCORE2O_VERSION: "v1.2.3"
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: core2o
+  labels:
+    name: core2o
+    app: core2o
+    image: ${DOCKER_IMAGE_NAME}
+  namespace: ${NAMESPACE}
+spec:
+  replicas: ${NUM_REPLICAS}
+  template:
+    metadata:
+      labels:
+        app: core2o
+    spec:
+      imagePullSecrets:
+        - name: regsecret
+      containers:
+      - name: core2o
+        image: "${DOCKER_IMAGE_NAME}:${docker_image_version}"
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+          protocol: TCP
+          name: api-port
+        envFrom:
+        - configMapRef:
+            name: core2o
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: core2o
+  name: core2o
+  namespace: ${NAMESPACE}
+spec:
+  ports:
+  - name: core2o
+    port: 80
+    targetPort: api-port
+    protocol: TCP
+  selector:
+    app: core2o
+---
