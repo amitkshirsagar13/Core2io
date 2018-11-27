@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using NLog.Extensions.Logging;
 using NLog.Web;
+using Prometheus;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Core2io
@@ -74,6 +75,7 @@ namespace Core2io
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Core2io Service API V1");
             });
+            app.UseMetricServer();
         }
     }
 }
